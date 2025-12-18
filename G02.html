@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Diagnosa gejala</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">
+        <span class="logo-box"></span>
+        <h2>Sistem Pakar<br><span>Diagnosa penyakit kulit wajah</span></h2>
+    </div>
+    <nav>
+          <a href="index.html"class="active">Home</a>
+        <a href="G01.html" class="active">Dignosa</a>
+        <a href="about.html" class="active">About</a>
+        <a href="diagram-tree.html"class="active">Diagram Tree</a>
+        <a href="#">Implikasi</a>
+    </nav>
+</header>
+
+<!-- ===== DIAGNOSA SECTION ===== -->
+<section class="diagnosa-layout">
+
+    <div class="diagnosa-image">
+        <img src="data:image/jpeg;base64,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" alt="Diagnosa Image">
+    </div>
+
+ <!-- ===== PERTANYAAN DIAGNOSA ===== -->
+<section class="diagnosa-question">
+    <h2>kulit wajah terasa berminyak berlebihan?</h2>
+
+     <div class="diagnosa-buttons">
+    <a href="P01.html">
+        <button class="btn-yes">Ya</button>
+    </a>
+
+    <a href="G03.html">
+        <button class="btn-no">Tidak</button>
+    </a>
+</div>
+</section>
+
+
+    <div class="diagnosa-info">
+        <h1>Diagnosa gejala </h1>
+        <p>
+           Diagnosa" minyak muka berlebihan sebenarnya adalah mengenali gejala
+           dan ciri-ciri bahwa kulit Anda memproduksi sebum (minyak alami kulit) secara berlebih. 
+           Ini umumnya bukan kondisi medis yang memerlukan diagnosa formal dari dokter, 
+           kecuali jika sangat parah atau menyebabkan masalah kulit yang signifikan.
+        </p>
+
+       
+
+
+        
+    </div>
+
+</section>
+
+<!-- ===== FITUR ===== -->
+<section class="diagnosa-features">
+    <div class="feature-box">
+        <span>✔</span>
+        <h4>Input Gejala</h4>
+        <p>Pengguna memilih gejala yang dialami.</p>
+    </div>
+    <div class="feature-box">
+        <span>✔</span>
+        <h4>Proses Diagnosa</h4>
+        <p>Sistem memproses data berdasarkan aturan.</p>
+    </div>
+    <div class="feature-box">
+        <span>✔</span>
+        <h4>Hasil Analisis</h4>
+        <p>Menampilkan hasil diagnosa awal.</p>
+    </div>
+    <div class="feature-box">
+        <span>✔</span>
+        <h4>Rekomendasi</h4>
+        <p>Saran tindakan lanjutan bagi pengguna.</p>
+    </div>
+    <div class="feature-box">
+        <span>✔</span>
+        <h4>Data Tersimpan</h4>
+        <p>Riwayat diagnosa dapat disimpan.</p>
+    </div>
+    <div class="feature-box">
+        <span>✔</span>
+        <h4>Berbasis AI</h4>
+        <p>Dapat dikembangkan dengan AI / Fuzzy.</p>
+    </div>
+</section>
+
+</body>
+</html>

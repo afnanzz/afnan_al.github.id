@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Diagnosa gejala</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">
+        <span class="logo-box"></span>
+        <h2>Sistem Pakar<br><span>Diagnosa penyakit kulit wajah</span></h2>
+    </div>
+    <nav>
+          <a href="index.html"class="active">Home</a>
+        <a href="G01.html" class="active">Dignosa</a>
+        <a href="about.html" class="active">About</a>
+        <a href="diagram-tree.html"class="active">Diagram Tree</a>
+        <a href="#">Implikasi</a>
+    </nav>
+</header>
+
+<!-- ===== DIAGNOSA SECTION ===== -->
+<section class="diagnosa-layout">
+
+    <div class="diagnosa-image">
+        <img src="data:image/png;base64,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" alt="Diagnosa Image">
+    </div>
+
+ <!-- ===== PERTANYAAN DIAGNOSA ===== -->
+<section class="diagnosa-question">
+    <h2>kulit kemerahan dan bersisik?</h2>
+
+     <div class="diagnosa-buttons">
+    <a href="P03.html">
+        <button class="btn-yes">Ya</button>
+    </a>
+
+    <a href="P02.html">
+        <button class="btn-no">Tidak</button>
+    </a>
+</div>
+</section>
+
+
+    <div class="diagnosa-info">
+        <h1>Diagnosa gejala </h1>
+        <p>
+            Kulit wajah yang kemerahan dan bersisik dapat disebabkan oleh berbagai kondisi medis,
+             sehingga tidak dapat didiagnosis secara pasti tanpa pemeriksaan dokter. 
+             Beberapa penyebab paling umum meliputi:
+        </p>
+
+       
+
+
+        
+    </div>
+
+</section>
+
+<!-- ===== FITUR ===== -->
+<section class="diagnosa-features">
+    <div class="feature-box">
+        <span>✔</span>
+        <h4>Input Gejala</h4>
+        <p>Pengguna memilih gejala yang dialami.</p>
+    </div>
+    <div class="feature-box">
+        <span>✔</span>
+        <h4>Proses Diagnosa</h4>
+        <p>Sistem memproses data berdasarkan aturan.</p>
+    </div>
+    <div class="feature-box">
+        <span>✔</span>
+        <h4>Hasil Analisis</h4>
+        <p>Menampilkan hasil diagnosa awal.</p>
+    </div>
+    <div class="feature-box">
+        <span>✔</span>
+        <h4>Rekomendasi</h4>
+        <p>Saran tindakan lanjutan bagi pengguna.</p>
+    </div>
+    <div class="feature-box">
+        <span>✔</span>
+        <h4>Data Tersimpan</h4>
+        <p>Riwayat diagnosa dapat disimpan.</p>
+    </div>
+    <div class="feature-box">
+        <span>✔</span>
+        <h4>Berbasis AI</h4>
+        <p>Dapat dikembangkan dengan AI / Fuzzy.</p>
+    </div>
+</section>
+
+</body>
+</html>
